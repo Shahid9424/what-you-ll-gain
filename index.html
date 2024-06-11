@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You'll Gain</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            background: linear-gradient(45deg, #113428,#113428);
+         
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+           
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        p{
+            text-align: center;
+            color: #fffefe;
+        }
+        .section3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+           
+}
+            
+        }
+        .leftImgBox {
+            grid-column: 1 / 2;
+        }
+        .leftImgBox img {
+            width: 70%;
+            height: auto;
+            border-radius: 30px;
+        }
+        .rightContent {
+            grid-column: 2 / 3;
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            gap: 25px;
+            
+        }
+        .eachBox1 {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #355E3B;
+
+        }
+        .eachBox1:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 10px rgba(80, 245, 74, 0.2);
+            border-color: #209c24;
+        }
+        .iconNumber {
+            font-size: 24px;
+            font-weight: bold;
+            background-color:#113428;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .contentBox {
+            flex: 1;
+        }
+        .contentBox h1 {
+            margin: 0;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .contentBox p {
+            margin: 0;
+            color:white
+        }
+        @media (max-width: 768px) {
+            .section3 {
+                grid-template-columns: 1fr;
+            }
+            .leftImgBox, .rightContent {
+                grid-column: 1;
+            }
+            .eachBox1 {
+                flex-direction: column;
+                text-align: center;
+            }
+            .iconNumber {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What You'll Gain</h1>
+        <p>Fast-track your UI/UX career with VRG's bootcamp</p>
+        <section class="section3">
+            <div class="leftImgBox">
+                <img src="images/what_you_gain.gif" alt="What You'll Gain">
+            </div>
+            <div class="rightContent">
+                <div class="eachBox1">
+                    <div class="iconNumber">1</div>
+                    <div class="contentBox">
+                        <h1>Practical Skills</h1>
+                        <p>Participants will work on real-world projects to apply theoretical concepts, enhancing their ability to create intuitive, user-friendly digital products.</p>
+                    </div>
+                </div>
+                <div class="eachBox1">
+                    <div class="iconNumber">2</div>
+                    <div class="contentBox">
+                        <h1>Professional Portfolio</h1>
+                        <p>Create a standout portfolio filled with impressive real-world design projects that highlight your unique skills and creativity.</p>
+                    </div>
+                </div>
+                <div class="eachBox1">
+                    <div class="iconNumber">3</div>
+                    <div class="contentBox">
+                        <h1>Job-Ready Expertise</h1>
+                        <p>Acquire the essential skills and knowledge needed to thrive in the competitive UI/UX job market, making you job-ready from day one.</p>
+                    </div>
+                </div>
+                <div class="eachBox1">
+                    <div class="iconNumber">4</div>
+                    <div class="contentBox">
+                        <h1>Mentorship and Support</h1>
+                        <p>Benefit from invaluable mentorship and support from seasoned industry professionals, guiding you towards unlocking your full potential in the dynamic world of UI/UX design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
